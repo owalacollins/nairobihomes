@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+body{
+    background-color: rgb(46, 41, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+}
+fieldset{
+    border: 1px solid gray;
+  padding: 20px;
+  background:linear-gradient(45deg, goldenrod 50%,rgb(46, 41, 41) 50%)
+}
+form input{
+    display: block;
+    width: 30vw;
+    margin: 20px 0px;
+    padding: 10px ;
+    background: none;
+    border: 1px solid rgb(5, 105, 105);
+    outline: none;
+    color: white;
+    
+}
+::placeholder {
+    color: rgb(8, 8, 8);
+}
+fieldset p{
+ color: white;
+ margin: 10px 0px;
+ font-size: 20px;
+}
+fieldset a{
+    color: rgb(14, 16, 17);
+    margin: 0px 10px;
+}
+body h3{
+    text-transform: uppercase;
+    color: rgb(39, 38, 38);
+    margin: 40px 0;
+    font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:1000;
+  font-style: normal;
+  padding: 20px 50px;
+  background-color: goldenrod;
+  
+}
+legend{
+    text-align: center;
+}
+legend img{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid gold;
+    box-shadow: inset 10px 10px 10px gold;
+    border-radius: 50%;
+}
+select{
+    display: block;
+    width: 30vw;
+    margin: 20px 0px;
+    padding: 10px ;
+    background: none;
+    border: 1px solid rgb(5, 105, 105);
+    outline: none;
+    color: white;
+}
+option{
+    color: black;
+}
+@media screen and (max-width:800px){
+    body h3{
+        text-transform: uppercase;
+        color: rgb(39, 38, 38);
+        margin: 40px 0;
+        font-family: "Dosis", sans-serif;
+      font-optical-sizing: auto;
+      font-weight:1000;
+      font-style: normal;
+      padding: 10px 40px;
+      background-color: goldenrod;
+      font-size: 10px;
+      
+    }
+    form input{
+        display: block;
+        width: 80vw;
+        margin: 20px 0px;
+        padding: 10px ;
+        background: none;
+        border: 1px solid rgb(5, 105, 105);
+        outline: none;
+        color: white;
+        
+    }
+    fieldset{
+      border: 1px solid gray;
+      padding: 10px;
+      background:linear-gradient(45deg, goldenrod 50%,rgb(46, 41, 41) 50%)
+    }
+    legend{
+        text-align: center;
+    }
+    legend img{
+        width: 100px;
+        display: block;
+        margin: 0 auto;
+        border: 2px solid gold;
+        box-shadow: inset 10px 10px 10px gold;
+        border-radius: 50%;
+    }
+    select{
+        display: block;
+        width: 80vw;
+        margin: 20px 0px;
+        padding: 10px ;
+        background: none;
+        border: 1px solid rgb(5, 105, 105);
+        outline: none;
+        color: white;
+    }
+    option{
+        color: black;
+    }
+}

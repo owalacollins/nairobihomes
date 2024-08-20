@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+section{
+    max-width: 1500px;
+    min-height: 50vh;
+    border: 1px solid red;
+    padding: 10px;
+    margin: 0 auto;
+  
+}
+.cartitems{
+    background-color: rgb(0, 0, 0);
+    width: 50px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+.cartitems h3 a{
+    color: goldenrod;
+}
+.cartitems sup{
+    color: white;
+    margin-left: 5px;
+}
+.subt{
+    color: rgb(241, 199, 91);
+    margin-bottom: 3vh;
+    font-family: "Gupter", serif;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 7PX;
+    font-size: 10PX;
+    text-transform: uppercase;
+    text-align: center;
+   }
+   .topic{
+       font-family: "Calistoga", serif;
+       text-align: justify;
+       font-weight: 400;
+       font-style: normal;
+       color: rgb(241, 234, 215); 
+       letter-spacing: 2PX;
+     text-transform: uppercase;
+   }
+body{
+    background-color: rgb(46, 41, 41);
+}
+/* hed styling starts here */
+#hed{
+    background:linear-gradient(rgba(0, 0, 0, 0.648),rgba(0, 0, 0, 0.648)),url(../images/list.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+nav{
+    height: 0;
+   /* border: 1px solid greenyellow; */
+}
+.nav1{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  
+    height: 100%;
+    
+}
+li{
+  margin: 0 20px;  
+  list-style: none;
+  float: left;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+  letter-spacing: 1px;
+  /*
+  font-family: "Gupter", serif;
+    font-weight: 900;
+    font-style: normal; */
+  
+}
+
+.nav1 a{
+  color: white;
+   text-transform: uppercase;
+}
+nav h1{
+      text-transform: uppercase;
+      color: rgb(241, 199, 91);
+  letter-spacing: 2px;
+      font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;/*
+        font-family: "Calistoga", serif;
+        font-weight: 400;
+        font-style: normal;
+      
+      */
+      
+}
+
+
+.content{
+    /*border: 1px solid yellow; */
+    width: 100%;
+    height: 45vh;
+    margin-top: 5vh;
+    display: flex;
+    border: 1px solid yellow;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    color: white;
+    padding: 7VW;
+}
+.content h2{
+    font-size: 2vw;
+   
+}
+.content h1{
+    font-size: 5vw;
+    font-family: "Calistoga", serif;
+        font-weight: 400;
+        font-style: normal;
+       
+}
+.content h3{
+    font-size: 2vw;
+    margin: 10PX;
+}
+.content span{
+    background-color: rgb(199, 173, 108);
+    padding: 10PX;
+}
+.ctn{
+    background-color: rgb(248, 220, 148);
+    color: black;
+    padding: 10px 50px;
+    border: none;
+    
+}
+.ctn a{
+    color: rgb(117, 114, 114);
+    letter-spacing: 2px;
+}
+/* hed styling ends here */
+
+/* areas  styling starts here */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gallery{
+    padding: 10px;
+    border: 1px solid rgb(32, 29, 29);
+    width: 20%;
+    min-height: 350px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.459);
+}
+.gallery img{
+    width: 100%;
+    height: 170px;
+    border: 1px solid rgb(255, 255, 255);
+}
+.desc h3{
+    color: goldenrod;
+    text-transform: uppercase;
+    font-family: "Anton", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 1px;
+
+}
+.desc{
+    text-align: center;
+    padding: 10px;
+}
+.desc p{
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:200;
+    font-style: normal;
+    color: whitesmoke;
+    margin: 10px;
+    color: rgb(148, 136, 136);
+   
+    
+}
+.btn{
+    background-color:white;
+    border:2px solid goldenrod;
+    text-transform: capitalize;
+    padding: 7px 30px;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+
+    
+}
+.btn a{
+ color: rgb(0, 0, 0);
+}
+
+/* areas  styling ends here */
+/* about page home section styling starts here */
+#home{
+    padding: 20px;
+}
+.homecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.homecontainer img{
+ margin: 10px;
+ width: 300px;
+ height: 200px;
+}
+.details h1{
+    color: rgb(230, 219, 194);
+    text-transform: uppercase;
+    letter-spacing: 2px ;
+    word-spacing: 2px;
+    margin: 10px 0px;
+}
+.details h2,h4 {
+    color: goldenrod;
+    margin: 10px 0;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+span{
+    color: rgb(255, 255, 255);
+}
+#home h2{
+    color: rgb(230, 219, 194);
+    text-transform: uppercase;
+}
+.amenities table{
+    width: 300px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    margin: 20px;
+}
+.amenities table tr{
+    padding: 10px;
+}
+.extra p{
+    border-left: 7px solid whitesmoke;
+    padding-left: 20px;
+     font-family: "Dosis", sans-serif;
+     font-optical-sizing: auto;
+     font-weight:200;
+     font-style: normal;
+     font-size: 2    0px;
+    color: aliceblue;
+     text-align: center;
+     max-width: 800px;
+     margin: 10px 0;
+   
+}
+
+/* about page home section styling ends here */
+/* cart page areas section styling start here */
+
+.cart{
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    max-height: 400px;
+  
+    padding: 10px;
+    margin: 10px;
+}
+.image  img{
+    width: 400px;
+    max-height: 250px;
+}
+.ctn1{
+    display: block;
+    margin: 10px;
+    width: 300px;
+}
+/* cart page areas section styling ends here */
+
+
+/* responsive styling start here */
+
+@media  screen and (max-width:800px) {
+    .content{
+        /*border: 1px solid yellow; */
+        width: 100%;
+        height: 45vh;
+        margin-top: 5vh;
+        display: flex;
+        border: 1px solid rgb(216, 216, 216);
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        color: white;
+        padding: 7VW;
+    }
+    .content h2{
+        font-size: 40px;
+       
+    }
+    .content h1{
+        font-size: 40px;
+        font-family: "Calistoga", serif;
+            font-weight: 400;
+            font-style: normal;
+           
+    }
+    .content h3{
+        font-size: 20px;
+        margin: 10PX;
+    }
+    .content span{
+        background-color: rgb(199, 173, 108);
+        padding: 10PX;
+    }
+    .ctn{
+        background-color: rgb(248, 220, 148);
+        color: black;
+        padding: 10px 50px;
+        border: none;
+        
+    }
+    .ctn a{
+        color: rgb(117, 114, 114);
+        letter-spacing: 2px;
+    }
+    /* areas  styling starts here */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gallery{
+    padding: 10px;
+    border: 1px solid rgb(32, 29, 29);
+    width: 30%;
+    min-height: 350px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.459);
+}
+
+
+/* areas  styling ends here */
+
+/* cart page areas section styling start here */
+
+.cart{
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 900px;
+    max-height: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+.image  img{
+    max-width: 300px;
+    max-height: 200px;
+}
+.ctn1{
+    display: block;
+    margin: 10px;
+    width: 300px;
+}
+/* cart page areas section styling ends here */
+
+}
+
+@media screen and  (max-width:500px){
+    
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .gallery{
+        padding: 10px;
+        border: 1px solid rgb(32, 29, 29);
+        width: 95%;
+        min-height: 350px;
+        margin: 10px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.459);
+    }
+
+    .cart{
+        border: 1px solid rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    width:100%;
+        max-height: 400px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .image  img{
+        width: 100%;
+        max-height: 200px;
+    }
+    .ctn1{
+        display: block;
+        margin: 10px;
+        width: 100%;
+    }
+    /* cart page areas section styling ends here */
+    /* about page home section styling starts here */
+#home{
+    padding: 20px;
+}
+.homecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.homecontainer img{
+ margin: 10px;
+ width: 100%;
+ height: 200px;
+}
+.details h1{
+    color: rgb(230, 219, 194);
+    text-transform: uppercase;
+    letter-spacing: 2px ;
+    word-spacing: 2px;
+    margin: 10px 0px;
+}
+.details h2,h4 {
+    color: goldenrod;
+    margin: 10px 0;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+span{
+    color: rgb(255, 255, 255);
+}
+#home h2{
+    color: rgb(230, 219, 194);
+    text-transform: uppercase;
+}
+.amenities table{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    margin: 20px;
+}
+.amenities table tr{
+    padding: 10px;
+}
+.extra p{
+    border-left: 7px solid whitesmoke;
+    padding-left: 20px;
+     font-family: "Dosis", sans-serif;
+     font-optical-sizing: auto;
+     font-weight:200;
+     font-style: normal;
+     font-size: 2    0px;
+     color: aliceblue;
+     text-align: center;
+     max-width: 800px;
+     margin: 10px 0;
+   
+}
+
+/* about page home section styling ends here */
+    
+}
+
+
+
+/* responsive styling ends here */
