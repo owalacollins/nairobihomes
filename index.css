@@ -343,6 +343,28 @@ nav h1{
 /* responsive styling start here */
 
 @media  screen and (max-width:800px) {
+
+    .content h2{
+        font-size: 20px;
+       
+    }
+    .content h1{
+        font-size: 40px;
+        font-family: "Calistoga", serif;
+            font-weight: 400;
+            font-style: normal;
+           
+    }
+    .content h3{
+        font-size: 20px;
+        margin: 10PX;
+    }
+    .content span{
+        background-color: rgb(199, 173, 108);
+        padding: 1PX;
+        display: block;
+        
+    }
     #menu,#close{
         display: block;
     }
