@@ -1,18 +1,39 @@
+<?php
+include 'config.php';
+
+session_start();
+$user_id = $_SESSION['user_id'] ;
+echo $user_id;
+
+if(!$user_id){
+    header('location:login.php');
+}
+
+if(isset($_GET['getid'])){
+    $itemid = $_GET['getid'];
+    $_SESSION['iditem'] = $itemid;
+          header('location:about.php'); 
+      }
+
+/* INSERT INTO `list` (`id`, `image`, `name`, `location`, `rent`, `type`) VALUES
+('1', 'images.jpg', 'royal vila', 'embakasi', '5000', 'bedsitter'),
+('2', 'elcortijo-1.jpeg', 'hamisi homes', 'kasarani', '56200', 'single room'),
+('3', 'download.jpg', 'neema homes', 'naivas', '89520', 'bedsitter'), 
+('4', '0aebe36d-65cb-46f9-b35c-e02f25c13d45.jpg', 'rukia app', 'westlands', '56200', 'single room'),
+('5', 'list.webp', 'mwalimu plaza', 'jkuat', '5000', 'bedsitter'),
+('6', 'GC-Living-03.webp', 'dimples homes', 'mwihoko', '5000', '1 bedroom'),
+('7', 'kitchen.jpg', 'wega wangai', 'kangemi', '5000', 'bedsitter'),
+('8', 'siting.jpg', 'serena homes', 'thika', '5000', 'bedsitter'),
+('9', 'elcortijo-1.jpeg', 'biafra apartments', 'githurai', '56200', 'single room');*/
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="list.css">
 
  <!--  fonts--> 
  <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,55 +55,34 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
- 
+
 <script src="https://kit.fontawesome.com/4d903c9eb4.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
     <header>
         <section id="hed">
-            <nav>
-                <div class="nav1" >
-                    <h1>nairobihomes</h1>
-                    <h2><i id="menu" class="fa-solid fa-bars"></i></h2>
-                    <ul id="nav1">
-                        <h2><i id="close" class="fa-solid fa-x"></i></h2>
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="front/register.html">properties</a></li>
-                    
-                        <li><a href="front/login.html">sign in</a></li>
-                        <li><a href="front/contact.html">contact</a></li>
-                    </ul>
-                </div>
-            </nav>
+           <div class="cartitems">
+            <h3> <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i><sup>2</sup></a></h3> 
+           </div>
             <div class="content">
-           <h2>THE #1 SOURCE FOR</h2>
-         <h1>NAIROBI</h1>  
-<h3> LUXURY REAL ESTATE, <span> FIND YOURS.</span></h3>
-<h4>Best Real Estate Agency in Spain 2022-2024 according to International Property Awards </h4>
+               <h1> Discover Your New Home</h1> 
+               <h3>from here posibilities are everywhere.</h3> 
+               <button class="ctn"><a href="filter.html"> filter</a></button>
             </div>
-        </section>
+            </section>
     </header>
     <main>
-       
-        <section id="contacts">
-           <img src="../images/pic1.jpg" alt="">
-           <div class="social">
-            <h2>meet CEO</h2>
-           <p>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem non eius deleniti asperiores? Rem, quam esse, quia repudiandae tempore ipsum amet dolore facere ab, aliquam quae illum odio rerum? Ullam!
-             Deserunt dicta aut dolorem quibusdam consequatur corrupti, laborum quisquam sit, et repellendus suscipit? Magni ipsa voluptates, quae rem perspiciatis iure commodi provident accusantium error nostrum quod corrupti officia ratione odit.
-             Mollitia dolor tempore eaque eligendi magnam deleniti neque dolores commodi cupiditate expedita, nostrum quas, pariatur at placeat voluptatem iste nulla. Earum accusamus iusto repudiandae odit aperiam neque ex! Aspernatur, vitae?
-        </p>
-             <div class="socialmedia">
-               <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-               <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-               <a href="#"><i class="fa-brands fa-instagram"></i></a>
-               <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-               <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                
-               </div>
-            </div>
-           
+        <section id="areas">
+            <?php
+               $checkitem= mysqli_query($conn, "SELECT * FROM `users` WHERE id = '$user_id'") or die('cant select from uers');
+               while($row = mysqli_fetch_assoc($checkitem)){?>
+               <h2 class="topic">Explore Listings <?php echo $row['name'] ?></h2>
+               <h4 class="subt">thank you for choosing us </h4>
+               <?php
+               }
+            ?>
+            <div id="container"> </div>
         </section>
         <section class="footer">
             <div class="div1">
@@ -110,5 +110,31 @@
             <hr>
                     </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" >
+
+</script>
+<script>
+    $(document).ready(function(){
+        displaylist()
+    })
+function displaylist(){
+var displayitem = 'true';
+
+$.ajax({
+    url:'display.php',
+    type:'POST',
+    data:{
+        displaysend:displayitem,
+    
+    },
+    success:function(data,status){
+      //  alert(status);
+      $('#container').html(data);
+    }
+} ) 
+};
+
+
+</script>
 </body>
 </html>

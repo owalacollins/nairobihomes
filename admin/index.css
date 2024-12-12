@@ -1,0 +1,237 @@
+*{
+ box-sizing: border-box;
+ text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+}
+section{
+    border: 1px solid red;
+    height: 800px;
+    max-width: 1400;
+    margin: 0 auto;
+    overflow: fixed;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+nav{
+    background-color: rgb(43, 41, 41);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.253);
+    height: 7vh;
+    width: 100%;
+}
+.left{
+    width: 20vw;
+    background-color: rgb(43, 41, 41);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.253);
+    height: 90vh;
+    
+}
+.right{
+   overflow-x: scroll;
+    height: 90vh;
+    width: 80vw;
+}
+.left a{
+display: block;
+color: gray;
+margin: 50px;
+}
+.cubes{
+    border: 1px solid green ;
+    width: 90%;
+    height: 30vh;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+.cube{
+    width: 15vw;
+    height: 15vh;
+    border-radius: 10px;
+    background-color: gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.cube h2{
+    font-size: 20px;
+}
+.cube h1{
+    font-size: 50px;
+}
+/* customers styling starts here */
+.tables{
+  overflow:scroll;
+  height:600px;
+
+}
+table{
+    width: 70vw;
+   margin-left: 20px;
+    margin: 20px auto;
+}
+.table{
+max-height: 400px;
+overflow: scroll;
+}
+.table h3{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin: 0;
+    color: red;
+}
+table button{
+    
+    padding: 5px 20px;
+    color: white;
+    border: none;
+}
+.val{
+    background-color: rgb(9, 133, 5);
+}
+.del{
+    background-color: red;
+}
+th{
+    background-color: gray;
+    color: white;
+    padding: 7px;
+}
+td{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+/* customers styling ends here */
+/* homes styling starts here */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+.gallery{
+    padding: 10px;
+    border: 1px solid rgb(32, 29, 29);
+    width: 20%;
+    min-height: 350px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.459);
+}
+.gallery img{
+    width: 100%;
+    height: 170px;
+    border: 1px solid rgb(255, 255, 255);
+}
+.desc h3{
+    color: goldenrod;
+    text-transform: uppercase;
+    font-family: "Anton", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 1px;
+
+}
+.desc{
+    text-align: center;
+    padding: 10px;
+}
+.desc p{
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:200;
+    font-style: normal;
+    color: whitesmoke;
+    margin: 10px;
+    color: rgb(148, 136, 136);
+   
+    
+}
+.btn{
+    background-color:white;
+    border:2px solid goldenrod;
+    text-transform: capitalize;
+    padding: 7px 30px;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+
+    
+}
+.btn a{
+ color: rgb(0, 0, 0);
+}
+.desc button{
+    padding: 7px 20px;
+    border: none;
+   color: white;
+}
+.delete{
+    background-color: red;
+}
+/* update styling starts here */
+.update{
+    background-color: rgb(16, 124, 6);
+}
+.top{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid red;
+    height:300px;
+    width: 60vw;
+    margin: 0 auto;
+}
+.top img{
+    width: 300px;
+    height: 200px;
+    margin-left: 40px;
+}
+.top input{
+    margin: 20px;
+}
+.inputs{
+    
+    width: 800px;
+    border: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inputs label{
+ display: block;
+ margin: 10px 0;
+ text-transform: capitalize;
+}
+.inputs input,textarea{
+    border: none;
+    padding: 10px 40px ;
+    background-color: rgb(200, 253, 253);
+    display: block;
+   
+}
+.submit{
+    display: block;
+    padding: 10px 40px;
+    background-color: rgb(84, 241, 241);
+    color: white;
+    margin: 10px;
+    text-transform: capitalize;
+    border: none;
+    color: black;
+}
+/* update styling ends here */
+
+/* homes  styling ends here */

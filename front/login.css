@@ -14,6 +14,13 @@ body{
     height: 100vh;
 
 }
+.message{
+    background-color: rgb(44, 44, 99);
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+
+}
 fieldset{
     border: 1px solid gray;
   padding: 20px;
